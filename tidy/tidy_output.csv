@@ -1,0 +1,234 @@
+Country,Continent,Metric,Value
+Austria,Europe,Is use a criminal offence? [USE],No
+Belgium,Europe,Is use a criminal offence? [USE],No
+Denmark,Europe,Is use a criminal offence? [USE],No
+Estonia,Europe,Is use a criminal offence? [USE],No
+Finland,Europe,Is use a criminal offence? [USE],Yes
+France,Europe,Is use a criminal offence? [USE],Yes
+Germany,Europe,Is use a criminal offence? [USE],No
+Greece,Europe,Is use a criminal offence? [USE],Yes
+Italy,Europe,Is use a criminal offence? [USE],No
+Netherlands,Europe,Is use a criminal offence? [USE],No
+Norway,Europe,Is use a criminal offence? [USE],Fine or imprisonment up to 6 months
+Portugal,Europe,Is use a criminal offence? [USE],No
+Spain,Europe,Is use a criminal offence? [USE],No
+Sweden,Europe,Is use a criminal offence? [USE],Yes
+Switzerland,Europe,Is use a criminal offence? [USE],No
+United Kingdom,Europe,Is use a criminal offence? [USE],
+Russian Federation,Europe,Is use a criminal offence? [USE],
+New Zealand,Oceania,Is use a criminal offence? [USE],
+Australia,Oceania,Is use a criminal offence? [USE],
+Nigeria,Africa,Is use a criminal offence? [USE],
+Peru,South America,Is use a criminal offence? [USE],
+Colombia,South America,Is use a criminal offence? [USE],
+Ecuador,South America,Is use a criminal offence? [USE],
+Bolivia,South America,Is use a criminal offence? [USE],
+Chile,South America,Is use a criminal offence? [USE],
+Brazil,South America,Is use a criminal offence? [USE],
+Mexico,North America,Is use a criminal offence? [USE],
+USA,North America,Is use a criminal offence? [USE],
+Canada,North America,Is use a criminal offence? [USE],
+Austria,Europe,Is possession a criminal offence? ,Yes
+Belgium,Europe,Is possession a criminal offence? ,Yes
+Denmark,Europe,Is possession a criminal offence? ,Yes
+Estonia,Europe,Is possession a criminal offence? ,No
+Finland,Europe,Is possession a criminal offence? ,"Yes, if deemed a 'narcotics offence'"
+France,Europe,Is possession a criminal offence? ,Yes
+Germany,Europe,Is possession a criminal offence? ,"Yes
+"
+Greece,Europe,Is possession a criminal offence? ,Yes
+Italy,Europe,Is possession a criminal offence? ,No
+Netherlands,Europe,Is possession a criminal offence? ,Yes
+Norway,Europe,Is possession a criminal offence? ,Yes
+Portugal,Europe,Is possession a criminal offence? ,No
+Spain,Europe,Is possession a criminal offence? ,No
+Sweden,Europe,Is possession a criminal offence? ,Yes
+Switzerland,Europe,Is possession a criminal offence? ,No
+United Kingdom,Europe,Is possession a criminal offence? ,
+Russian Federation,Europe,Is possession a criminal offence? ,
+New Zealand,Oceania,Is possession a criminal offence? ,
+Australia,Oceania,Is possession a criminal offence? ,
+Nigeria,Africa,Is possession a criminal offence? ,
+Peru,South America,Is possession a criminal offence? ,No
+Colombia,South America,Is possession a criminal offence? ,
+Ecuador,South America,Is possession a criminal offence? ,
+Bolivia,South America,Is possession a criminal offence? ,
+Chile,South America,Is possession a criminal offence? ,
+Brazil,South America,Is possession a criminal offence? ,
+Mexico,North America,Is possession a criminal offence? ,
+USA,North America,Is possession a criminal offence? ,
+Canada,North America,Is possession a criminal offence? ,
+Austria,Europe,Es posible pena privativa de la libertad?,Yes
+Belgium,Europe,Es posible pena privativa de la libertad?,Yes
+Denmark,Europe,Es posible pena privativa de la libertad?,Yes
+Estonia,Europe,Es posible pena privativa de la libertad?,Yes
+Finland,Europe,Es posible pena privativa de la libertad?,Yes
+France,Europe,Es posible pena privativa de la libertad?,Yes
+Germany,Europe,Es posible pena privativa de la libertad?,Yes
+Greece,Europe,Es posible pena privativa de la libertad?,Yes
+Italy,Europe,Es posible pena privativa de la libertad?,No
+Netherlands,Europe,Es posible pena privativa de la libertad?,Yes
+Norway,Europe,Es posible pena privativa de la libertad?,Fine
+Portugal,Europe,Es posible pena privativa de la libertad?,No
+Spain,Europe,Es posible pena privativa de la libertad?,No
+Sweden,Europe,Es posible pena privativa de la libertad?,Yes
+Switzerland,Europe,Es posible pena privativa de la libertad?,Yes
+United Kingdom,Europe,Es posible pena privativa de la libertad?,
+Russian Federation,Europe,Es posible pena privativa de la libertad?,
+New Zealand,Oceania,Es posible pena privativa de la libertad?,
+Australia,Oceania,Es posible pena privativa de la libertad?,
+Nigeria,Africa,Es posible pena privativa de la libertad?,
+Peru,South America,Es posible pena privativa de la libertad?,
+Colombia,South America,Es posible pena privativa de la libertad?,
+Ecuador,South America,Es posible pena privativa de la libertad?,
+Bolivia,South America,Es posible pena privativa de la libertad?,
+Chile,South America,Es posible pena privativa de la libertad?,
+Brazil,South America,Es posible pena privativa de la libertad?,
+Mexico,North America,Es posible pena privativa de la libertad?,
+USA,North America,Es posible pena privativa de la libertad?,
+Canada,North America,Es posible pena privativa de la libertad?,
+Austria,Europe,Minimum Sentence [POSSESSION],
+Belgium,Europe,Minimum Sentence [POSSESSION],
+Denmark,Europe,Minimum Sentence [POSSESSION],
+Estonia,Europe,Minimum Sentence [POSSESSION],
+Finland,Europe,Minimum Sentence [POSSESSION],
+France,Europe,Minimum Sentence [POSSESSION],
+Germany,Europe,Minimum Sentence [POSSESSION],
+Greece,Europe,Minimum Sentence [POSSESSION],
+Italy,Europe,Minimum Sentence [POSSESSION],
+Netherlands,Europe,Minimum Sentence [POSSESSION],
+Norway,Europe,Minimum Sentence [POSSESSION],
+Portugal,Europe,Minimum Sentence [POSSESSION],
+Spain,Europe,Minimum Sentence [POSSESSION],
+Sweden,Europe,Minimum Sentence [POSSESSION],
+Switzerland,Europe,Minimum Sentence [POSSESSION],
+United Kingdom,Europe,Minimum Sentence [POSSESSION],
+Russian Federation,Europe,Minimum Sentence [POSSESSION],
+New Zealand,Oceania,Minimum Sentence [POSSESSION],
+Australia,Oceania,Minimum Sentence [POSSESSION],
+Nigeria,Africa,Minimum Sentence [POSSESSION],
+Peru,South America,Minimum Sentence [POSSESSION],
+Colombia,South America,Minimum Sentence [POSSESSION],
+Ecuador,South America,Minimum Sentence [POSSESSION],
+Bolivia,South America,Minimum Sentence [POSSESSION],
+Chile,South America,Minimum Sentence [POSSESSION],
+Brazil,South America,Minimum Sentence [POSSESSION],
+Mexico,North America,Minimum Sentence [POSSESSION],
+USA,North America,Minimum Sentence [POSSESSION],
+Canada,North America,Minimum Sentence [POSSESSION],
+Austria,Europe,Maximum Sentence [POSSESSION],
+Belgium,Europe,Maximum Sentence [POSSESSION],
+Denmark,Europe,Maximum Sentence [POSSESSION],
+Estonia,Europe,Maximum Sentence [POSSESSION],
+Finland,Europe,Maximum Sentence [POSSESSION],
+France,Europe,Maximum Sentence [POSSESSION],
+Germany,Europe,Maximum Sentence [POSSESSION],
+Greece,Europe,Maximum Sentence [POSSESSION],
+Italy,Europe,Maximum Sentence [POSSESSION],
+Netherlands,Europe,Maximum Sentence [POSSESSION],
+Norway,Europe,Maximum Sentence [POSSESSION],
+Portugal,Europe,Maximum Sentence [POSSESSION],
+Spain,Europe,Maximum Sentence [POSSESSION],
+Sweden,Europe,Maximum Sentence [POSSESSION],
+Switzerland,Europe,Maximum Sentence [POSSESSION],
+United Kingdom,Europe,Maximum Sentence [POSSESSION],
+Russian Federation,Europe,Maximum Sentence [POSSESSION],
+New Zealand,Oceania,Maximum Sentence [POSSESSION],
+Australia,Oceania,Maximum Sentence [POSSESSION],
+Nigeria,Africa,Maximum Sentence [POSSESSION],
+Peru,South America,Maximum Sentence [POSSESSION],
+Colombia,South America,Maximum Sentence [POSSESSION],
+Ecuador,South America,Maximum Sentence [POSSESSION],
+Bolivia,South America,Maximum Sentence [POSSESSION],
+Chile,South America,Maximum Sentence [POSSESSION],
+Brazil,South America,Maximum Sentence [POSSESSION],
+Mexico,North America,Maximum Sentence [POSSESSION],
+USA,North America,Maximum Sentence [POSSESSION],
+Canada,North America,Maximum Sentence [POSSESSION],
+Austria,Europe,Minimum Sentence [SUPPLY],
+Belgium,Europe,Minimum Sentence [SUPPLY],
+Denmark,Europe,Minimum Sentence [SUPPLY],
+Estonia,Europe,Minimum Sentence [SUPPLY],
+Finland,Europe,Minimum Sentence [SUPPLY],
+France,Europe,Minimum Sentence [SUPPLY],
+Germany,Europe,Minimum Sentence [SUPPLY],
+Greece,Europe,Minimum Sentence [SUPPLY],
+Italy,Europe,Minimum Sentence [SUPPLY],
+Netherlands,Europe,Minimum Sentence [SUPPLY],
+Norway,Europe,Minimum Sentence [SUPPLY],
+Portugal,Europe,Minimum Sentence [SUPPLY],
+Spain,Europe,Minimum Sentence [SUPPLY],
+Sweden,Europe,Minimum Sentence [SUPPLY],
+Switzerland,Europe,Minimum Sentence [SUPPLY],
+United Kingdom,Europe,Minimum Sentence [SUPPLY],
+Russian Federation,Europe,Minimum Sentence [SUPPLY],
+New Zealand,Oceania,Minimum Sentence [SUPPLY],
+Australia,Oceania,Minimum Sentence [SUPPLY],
+Nigeria,Africa,Minimum Sentence [SUPPLY],
+Peru,South America,Minimum Sentence [SUPPLY],
+Colombia,South America,Minimum Sentence [SUPPLY],
+Ecuador,South America,Minimum Sentence [SUPPLY],
+Bolivia,South America,Minimum Sentence [SUPPLY],
+Chile,South America,Minimum Sentence [SUPPLY],
+Brazil,South America,Minimum Sentence [SUPPLY],
+Mexico,North America,Minimum Sentence [SUPPLY],
+USA,North America,Minimum Sentence [SUPPLY],
+Canada,North America,Minimum Sentence [SUPPLY],
+Austria,Europe,Maximum Sentence  [SUPPLY],
+Belgium,Europe,Maximum Sentence  [SUPPLY],
+Denmark,Europe,Maximum Sentence  [SUPPLY],
+Estonia,Europe,Maximum Sentence  [SUPPLY],
+Finland,Europe,Maximum Sentence  [SUPPLY],
+France,Europe,Maximum Sentence  [SUPPLY],
+Germany,Europe,Maximum Sentence  [SUPPLY],
+Greece,Europe,Maximum Sentence  [SUPPLY],
+Italy,Europe,Maximum Sentence  [SUPPLY],
+Netherlands,Europe,Maximum Sentence  [SUPPLY],
+Norway,Europe,Maximum Sentence  [SUPPLY],
+Portugal,Europe,Maximum Sentence  [SUPPLY],
+Spain,Europe,Maximum Sentence  [SUPPLY],
+Sweden,Europe,Maximum Sentence  [SUPPLY],
+Switzerland,Europe,Maximum Sentence  [SUPPLY],
+United Kingdom,Europe,Maximum Sentence  [SUPPLY],
+Russian Federation,Europe,Maximum Sentence  [SUPPLY],
+New Zealand,Oceania,Maximum Sentence  [SUPPLY],
+Australia,Oceania,Maximum Sentence  [SUPPLY],
+Nigeria,Africa,Maximum Sentence  [SUPPLY],
+Peru,South America,Maximum Sentence  [SUPPLY],
+Colombia,South America,Maximum Sentence  [SUPPLY],
+Ecuador,South America,Maximum Sentence  [SUPPLY],
+Bolivia,South America,Maximum Sentence  [SUPPLY],
+Chile,South America,Maximum Sentence  [SUPPLY],
+Brazil,South America,Maximum Sentence  [SUPPLY],
+Mexico,North America,Maximum Sentence  [SUPPLY],
+USA,North America,Maximum Sentence  [SUPPLY],
+Canada,North America,Maximum Sentence  [SUPPLY],
+Austria,Europe,Mandatory Minimum Sentencing? ,Yes
+Belgium,Europe,Mandatory Minimum Sentencing? ,Yes
+Denmark,Europe,Mandatory Minimum Sentencing? ,No
+Estonia,Europe,Mandatory Minimum Sentencing? ,Yes
+Finland,Europe,Mandatory Minimum Sentencing? ,Yes
+France,Europe,Mandatory Minimum Sentencing? ,No
+Germany,Europe,Mandatory Minimum Sentencing? ,Yes
+Greece,Europe,Mandatory Minimum Sentencing? ,Yes
+Italy,Europe,Mandatory Minimum Sentencing? ,Yes
+Netherlands,Europe,Mandatory Minimum Sentencing? ,No
+Norway,Europe,Mandatory Minimum Sentencing? ,No 
+Portugal,Europe,Mandatory Minimum Sentencing? ,Yes
+Spain,Europe,Mandatory Minimum Sentencing? ,Yes
+Sweden,Europe,Mandatory Minimum Sentencing? ,No
+Switzerland,Europe,Mandatory Minimum Sentencing? ,No
+United Kingdom,Europe,Mandatory Minimum Sentencing? ,
+Russian Federation,Europe,Mandatory Minimum Sentencing? ,
+New Zealand,Oceania,Mandatory Minimum Sentencing? ,
+Australia,Oceania,Mandatory Minimum Sentencing? ,
+Nigeria,Africa,Mandatory Minimum Sentencing? ,
+Peru,South America,Mandatory Minimum Sentencing? ,
+Colombia,South America,Mandatory Minimum Sentencing? ,
+Ecuador,South America,Mandatory Minimum Sentencing? ,
+Bolivia,South America,Mandatory Minimum Sentencing? ,
+Chile,South America,Mandatory Minimum Sentencing? ,
+Brazil,South America,Mandatory Minimum Sentencing? ,
+Mexico,North America,Mandatory Minimum Sentencing? ,
+USA,North America,Mandatory Minimum Sentencing? ,
+Canada,North America,Mandatory Minimum Sentencing? ,
