@@ -1,33 +1,50 @@
-variable,type,description,coding / units,source,transform
-Continent,object,,,,
-Country,object,,,,
-Is use a criminal offence? [USE],object,,,,
-Is use an administrative offence? [USE],object,,,,
-Punishment [USE],object,,,,
-What are the alternatives to punishment for the offence? [USE],object,,,,
-Penalty varies by drug? [USE],object,,,,
-Penalty varies by quantity? [USE],object,,,,
-Penalty (response) varies for addiction? [USE],object,,,,
-Penalty varies for recidivism? [USE],object,,,,
-Is possession a criminal offence? [POSSESSION],object,,,,
-Is possession an administrative offence? [POSSESSION],object,,,,
-Punishment [POSSESSION],object,,,,
-Is prison possible? [POSSESSION],object,,,,
-Minimum Sentence [POSSESSION],object,,,,
-Maximum Sentence [POSSESSION],object,,,,
-What are the alternatives to punishment for the offence? [POSSESSION],object,,,,
-Penalty varies by drug? [POSSESSION],object,,,,
-Penalty varies by quantity? [POSSESSION],object,,,,
-Penalty (response) varies for addiction? [POSSESSION],object,,,,
-Penalty varies for recidivism? [POSSESSION],object,,,,
-Punishment [SUPPLY],object,,,,
-Minimum Sentence [SUPPLY],object,,,,
-Maximum Sentence  [SUPPLY],object,,,,
-Mandatory Minimum Sentencing? ,object,,,,
-What are the alternatives to punishment for the offence? [SUPPLY],object,,,,
-Penalty varies by drug? [SUPPLY],object,,,,
-Penalty varies by quantity? [SUPPLY],object,,,,
-Penalty (response) varies for addiction? [SUPPLY],object,,,,
-Penalty varies for recidivism? [SUPPLY],object,,,,
-Classification of drugs influencing penalties [CLASSIFICATION],object,,,,
-Comments,object,,,,
+category,subcategory,variable_code,variable_name,data_type,description,coding_units,source_type,collection_method,transform_method,index_weight,data_status,quality_flag,notes
+CONTEXT,Geographic,CTX_001,Country,categorical,Country identifier,ISO country codes,Administrative,Government records,None - identifier,0,Current,HQ,Primary identifier variable
+CONTEXT,Geographic,CTX_002,Region,categorical,Geographic region classification,Text - Europe/Americas/etc,Administrative,Geographic classification,Grouping variable,0,Current,HQ,Used for regional analysis
+CONTEXT,Economic,CTX_003,GDP_per_capita,continuous,Gross domestic product per capita,USD (current),International,World Bank/IMF databases,Log transformation for analysis,0,Planned,MQ,Economic development control variable
+CONTEXT,Demographic,CTX_004,Population,continuous,Total population,Number of people,International,UN Population Division,None,0,Planned,HQ,Denominator for rate calculations
+LEGAL_FRAMEWORK,Use_Criminalization,LEG_001,Use_Criminal_Offense,binary,Criminal offense status for drug use,1=Criminal/0=Not criminal/0.5=Mixed,Legal,National penal codes,Binary for index,0.05,Current,HQ,Foundation of policy approach
+LEGAL_FRAMEWORK,Use_Criminalization,LEG_002,Use_Admin_Offense,binary,Administrative offense for drug use,1=Administrative/0=Not/0.5=Mixed,Legal,Administrative codes,Binary for index,0.05,Current,HQ,Alternative to criminal prosecution
+LEGAL_FRAMEWORK,Possession_Laws,LEG_003,Possession_Criminal,binary,Criminal offense for possession,1=Criminal/0=Not/0.5=Mixed,Legal,Criminal codes,Binary for index,0.15,Current,HQ,Core enforcement mechanism
+LEGAL_FRAMEWORK,Possession_Laws,LEG_004,Possession_Prison_Possible,binary,Imprisonment possible for possession,1=Yes/0=No/0.5=Unclear,Legal,Sentencing guidelines,Binary for index,0.15,Current,HQ,Severity indicator
+LEGAL_FRAMEWORK,Possession_Laws,LEG_005,Possession_Max_Sentence,continuous,Maximum sentence for possession,Years of imprisonment,Legal,Criminal codes,Normalize 0-1 (÷10 years),0.10,Current,HQ,Penalty severity measure
+LEGAL_FRAMEWORK,Trafficking_Laws,LEG_006,Trafficking_Min_Sentence,continuous,Minimum sentence for trafficking,Years of imprisonment,Legal,Criminal codes,Normalize 0-1 (÷20 years),0.15,Current,HQ,Mandatory severity baseline
+LEGAL_FRAMEWORK,Trafficking_Laws,LEG_007,Trafficking_Max_Sentence,continuous,Maximum sentence for trafficking,Years (40=life imprisonment),Legal,Criminal codes,Normalize 0-1 (÷40 years),0.15,Current,HQ,Maximum penalty severity
+LEGAL_FRAMEWORK,Trafficking_Laws,LEG_008,Mandatory_Minimums,binary,Mandatory minimum sentences exist,1=Yes/0=No/0.5=Mixed,Legal,Sentencing legislation,Binary for index,0.20,Current,HQ,Judicial discretion constraint
+SUPPLY_CHAIN,Cultivation_Control,SUP_001,Coca_Legal_Status,ordinal,Legal status of coca leaf,0=Legal/0.5=Restricted/1=Illegal,Legal,Drug control schedules,Ordinal for index,0.30,Planned,MQ,Producer country specific
+SUPPLY_CHAIN,Cultivation_Control,SUP_002,Eradication_Programs,binary,Active coca eradication programs,1=Active/0=None/0.5=Limited,Implementation,Government reports,Binary for index,0.25,Planned,MQ,Producer country enforcement
+SUPPLY_CHAIN,Cultivation_Control,SUP_003,Alternative_Development,continuous,Budget for alternative development,$USD millions per year,Implementation,Government budgets,Log transformation,0.20,Planned,LQ,Development approach funding
+SUPPLY_CHAIN,Production_Control,SUP_004,Lab_Destruction_Rate,continuous,Drug labs destroyed per year,Number per 100k population,Implementation,Law enforcement statistics,Rate calculation,0.25,Planned,MQ,Production disruption measure
+SUPPLY_CHAIN,Production_Control,SUP_005,Precursor_Controls,ordinal,Chemical precursor control strength,0=None/0.5=Limited/1=Comprehensive,Legal,Chemical control legislation,Ordinal for index,0.30,Planned,MQ,Production prevention
+SUPPLY_CHAIN,Transit_Control,SUP_006,Border_Enforcement_Budget,continuous,Border drug enforcement budget,$USD millions per year,Implementation,Government budgets,Per capita normalization,0.20,Planned,LQ,Transit interdiction resources
+SUPPLY_CHAIN,Transit_Control,SUP_007,Port_Security_Measures,ordinal,Port/airport drug security level,0=Basic/0.5=Enhanced/1=Advanced,Implementation,Security assessments,Ordinal for index,0.15,Planned,MQ,Entry point control
+SUPPLY_CHAIN,Distribution_Control,SUP_008,Mid_Level_Prosecutions,continuous,Mid-level dealer prosecution rate,Prosecutions per 100k population,Implementation,Court statistics,Rate calculation,0.20,Planned,MQ,Distribution network targeting
+SUPPLY_CHAIN,Distribution_Control,SUP_009,Organized_Crime_Laws,binary,RICO-style organized crime laws,1=Comprehensive/0=Limited/0.5=Partial,Legal,Criminal legislation,Binary for index,0.25,Planned,HQ,Network disruption capability
+INTERNATIONAL,Cooperation_Treaties,INT_001,Extradition_Treaties,continuous,Drug-specific extradition treaties,Number of bilateral treaties,Legal,Treaty databases,Count normalization,0.25,Planned,HQ,International enforcement cooperation
+INTERNATIONAL,Cooperation_Treaties,INT_002,MLAT_Agreements,continuous,Mutual legal assistance treaties,Number of active agreements,Legal,Government records,Count normalization,0.20,Planned,HQ,Evidence sharing capability
+INTERNATIONAL,Joint_Operations,INT_003,DEA_Cooperation,binary,Active DEA cooperation programs,1=Active/0=None/0.5=Limited,Implementation,Law enforcement reports,Binary for index,0.30,Planned,MQ,US cooperation level
+INTERNATIONAL,Joint_Operations,INT_004,Europol_Participation,binary,Active Europol drug operations,1=Active/0=None/0.5=Limited,Implementation,Europol reports,Binary for index,0.25,Planned,MQ,EU cooperation level (Europe only)
+INTERNATIONAL,Intelligence_Sharing,INT_005,Intelligence_Agreements,continuous,Formal intelligence sharing agreements,Number of agreements,Legal,Intelligence agency records,Count normalization,0.20,Planned,LQ,Information sharing capacity
+INTERNATIONAL,Maritime_Aviation,INT_006,Maritime_Interdiction,binary,Joint maritime drug operations,1=Active/0=None/0.5=Limited,Implementation,Coast guard/navy reports,Binary for index,0.15,Planned,MQ,International waters enforcement
+FINANCIAL,Asset_Forfeiture,FIN_001,Civil_Forfeiture_Laws,ordinal,Civil asset forfeiture strength,0=None/0.5=Limited/1=Comprehensive,Legal,Asset forfeiture legislation,Ordinal for index,0.30,Planned,HQ,Economic disruption capability
+FINANCIAL,Asset_Forfeiture,FIN_002,Asset_Seizure_Rate,continuous,Drug-related asset seizures,$USD millions per year,Implementation,Law enforcement statistics,Per capita normalization,0.25,Planned,MQ,Implementation effectiveness
+FINANCIAL,Money_Laundering,FIN_003,AML_Penalties,continuous,Anti-money laundering max sentence,Years of imprisonment,Legal,Financial crime legislation,Normalize 0-1 (÷20 years),0.20,Planned,HQ,Financial crime severity
+FINANCIAL,Investigation_Capacity,FIN_004,Financial_Intelligence_Unit,binary,Specialized financial investigation unit,1=Exists/0=None/0.5=Limited,Implementation,Government organization charts,Binary for index,0.25,Planned,HQ,Financial investigation capability
+HARM_REDUCTION,Treatment_Access,HAR_001,Treatment_Budget_Per_Capita,continuous,Drug treatment budget per capita,$USD per capita per year,Implementation,Health ministry budgets,Per capita calculation,0.20,Planned,LQ,Treatment approach investment
+HARM_REDUCTION,Alternative_Sentencing,HAR_002,Drug_Courts,binary,Specialized drug courts exist,1=Yes/0=No/0.5=Limited,Legal,Judicial system records,Binary for index,0.25,Planned,MQ,Treatment alternative availability
+HARM_REDUCTION,Alternative_Sentencing,HAR_003,Treatment_Alternatives,ordinal,Treatment as alternative to prison,0=None/0.5=Limited/1=Comprehensive,Legal,Sentencing guidelines,Ordinal for index,0.30,Planned,HQ,Harm reduction policy strength
+HARM_REDUCTION,Prevention_Programs,HAR_004,Prevention_Budget,continuous,Drug prevention program budget,$USD millions per year,Implementation,Education/health budgets,Per capita normalization,0.15,Planned,LQ,Prevention investment level
+HARM_REDUCTION,Harm_Reduction_Services,HAR_005,Needle_Exchange_Programs,binary,Needle exchange programs available,1=Available/0=None/0.5=Limited,Implementation,Public health records,Binary for index,0.10,Planned,MQ,Harm reduction service availability
+IMPLEMENTATION,Enforcement_Resources,IMP_001,Drug_Enforcement_Budget,continuous,Total drug enforcement budget,$USD millions per year,Implementation,Law enforcement budgets,Per capita normalization,0.25,Planned,LQ,Resource allocation measure
+IMPLEMENTATION,Enforcement_Personnel,IMP_002,Drug_Officers_Per_Capita,continuous,Drug enforcement officers per capita,Officers per 100k population,Implementation,Police statistics,Rate calculation,0.20,Planned,MQ,Enforcement capacity measure
+IMPLEMENTATION,Prosecution_Rates,IMP_003,Drug_Prosecution_Rate,continuous,Drug prosecutions per capita,Prosecutions per 100k population,Implementation,Court statistics,Rate calculation,0.25,Planned,MQ,Legal system utilization
+IMPLEMENTATION,Conviction_Rates,IMP_004,Drug_Conviction_Rate,continuous,Drug conviction percentage,Convictions ÷ prosecutions × 100,Implementation,Court statistics,Percentage calculation,0.15,Planned,MQ,Enforcement effectiveness
+IMPLEMENTATION,Sentence_Reality,IMP_005,Average_Sentence_Served,continuous,Average time served for drug crimes,Years actually served,Implementation,Prison statistics,Mean calculation,0.15,Planned,LQ,Real vs theoretical penalties
+OUTCOMES,Incarceration,OUT_001,Drug_Incarceration_Rate,continuous,Drug-related incarceration rate,Prisoners per 100k population,Implementation,Prison statistics,Rate calculation,0,Planned,MQ,Policy impact measure
+OUTCOMES,Incarceration,OUT_002,Addiction_Treatment_In_Prison,continuous,Percentage of drug prisoners in treatment,Percentage receiving treatment,Implementation,Prison/health statistics,Percentage calculation,0,Planned,LQ,Prison-based harm reduction
+OUTCOMES,Drug_Availability,OUT_003,Cocaine_Seizure_Rate,continuous,Cocaine seizures per year,Kilograms per 100k population,Implementation,Law enforcement statistics,Rate calculation,0,Planned,HQ,Supply disruption indicator
+OUTCOMES,Drug_Availability,OUT_004,Cocaine_Purity_Street,continuous,Average street cocaine purity,Percentage purity,Implementation,Forensic laboratory data,Mean calculation,0,Planned,MQ,Supply chain effectiveness
+OUTCOMES,Drug_Availability,OUT_005,Cocaine_Price_Street,continuous,Street price of cocaine,$USD per gram,Implementation,Law enforcement intelligence,Price index normalization,0,Planned,LQ,Market disruption measure
+OUTCOMES,Public_Health,OUT_006,Drug_Related_Deaths,continuous,Drug-related deaths per capita,Deaths per 100k population,Implementation,Health ministry statistics,Rate calculation,0,Planned,HQ,Public health impact
+OUTCOMES,Crime_Impact,OUT_007,Drug_Related_Crime_Rate,continuous,Drug-related crime rate,Crimes per 100k population,Implementation,Police crime statistics,Rate calculation,0,Planned,MQ,Secondary crime effects
+OUTCOMES,Recidivism,OUT_008,Drug_Crime_Recidivism,continuous,Drug crime recidivism rate,Percentage re-offending within 3 years,Implementation,Corrections statistics,Percentage calculation,0,Planned,LQ,Rehabilitation effectiveness
